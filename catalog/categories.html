@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog Management</title>
+    <link rel="stylesheet" href="./categogies.css">
+</head>
+<body>
+    <form action="#">
+        <label for="catalogId">Catalog Id</label>
+        <input type="text" id="catalogId" name="catalogId"><br>
+        <label for="catalogName">Catalog Name</label>
+        <input type="text" id="catalogName" name="catalogName"><br>
+        <label for="priority">Priority</label>
+        <input type="number" id="priority" name="priority"><br>
+        <label for="description">Description</label>
+        <input type="text" id="description" name="description"><br>
+        <label for="status">Status</label>
+        <input type="radio" id="active" name="status" value="active" checked>
+        <label for="active">Active</label>
+        <input type="radio" id="inActive" name="status" value="inactive">
+        <label for="inActive">Inactive</label><br>
+        <input type="submit" id="btnSave" value="Save">
+    </form>
+    <hr>
+    <form action="#">
+        <label for="catalogNameSearch">Catalog Name</label>
+        <input type="text" id="catalogNameSearch" name="catalogNameSearch">
+        <button id="btnSearch">Search</button>
+    </form>
+    <hr>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Catalog Id</th>
+                <th>Catalog Name</th>
+                <th>Priority</th>
+                <th>Description</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="content">
+            
+        </tbody>
+    </table>
+    <a href="javascript:previewPage()" id="preview">Preview</a>
+    <ul id="listPage">
+    </ul>
+    <a href="javascript:nextPage()" id="next">Next</a>
+    <script src="./catgories.js"></script>
+</body>
+</html>
